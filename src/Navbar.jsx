@@ -1,6 +1,8 @@
 //have sections for about me, experience, education, contact me that jump to the section when clicked, have it designed so that 
 //more sections can be added in easily if updating information. 
+import Scroll from 'react-scroll';
 
+const NavLink =Scroll.NavLink
 
 const Navbar = () =>{
 
@@ -29,3 +31,44 @@ const Navbar = () => {
     </div>
   );
 };*/
+
+{/*<nav>
+  <ul>
+    <li>
+      <Link
+        activeClass="active"
+        to="section1"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        Section 1
+      </Link>
+    </li>
+    <li>
+      <Link
+        activeClass="active"
+        to="section2"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        Section 2
+      </Link>
+    </li>
+    <li>
+      <Link
+        activeClass="active"
+        to="section3"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        Section 3
+      </Link>
+    </li>
+  </ul>
+</nav>*/}
