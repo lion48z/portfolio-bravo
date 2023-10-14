@@ -3,7 +3,7 @@
 # Headings and Sections 
 1. Header which will house person's name and picture or icon/logo 
 2. Navbar to jump to sections of the page About, Education, Experience, Contact Me
-2. About me section hard coded with a paragraph/ cover letter type info
+2. About me section hard coded with a paragraph/ cover letter type info. Maybe use Icons for skills react logo, JS logo 
 3. Education hard coded in ???// form style or paragraph
 4. Experience can put links in inputting hyperlink???? Thumbnail with description  onclick get website 
 5. Form contact me 3 -4 inputs for their name, their email, brief description of what they want to talk about, button that sends it to your email. 
