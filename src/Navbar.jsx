@@ -9,16 +9,16 @@ function Navbar() {
     <nav className="nav">
       <a href="/" className="site-title">Home</a>
       <ul>
-        <li>
+        <li className="active">
           <a href="/aboutMe">About Me</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/education">Education</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/experience">Experience</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/contactMe">Contact Me</a>
         </li>
       </ul>
