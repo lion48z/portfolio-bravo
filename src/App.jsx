@@ -6,13 +6,14 @@ import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import ContactMe from "./pages/ContactMe";
 import NotFoundComponent from "./pages/NotFoundComponent";
+import Home from "./pages/Home";
 
 function App() {
   let Component;
 
   switch (window.location.pathname) {
     case "/":
-      Component = About; // Assuming you want the About component for the "/" path
+      Component = Home; // Assuming you want the About component for the "/" path
       break;
     case "/aboutMe":
       Component = About;
