@@ -3,21 +3,33 @@
 
 
 const Navbar = () =>{
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
+function Navbar() {
+  return (
+    <nav className="row">
+      <a href="/" className="site-title">Home</a>
+      <ul>
+        <li>
+          <a href="/aboutMe">About Me</a>
+        </li>
+        <li>
+          <a href="/education">Education</a>
+        </li>
+        <li>
+          <a href="/experience">Experience</a>
+        </li>
+        <li>
+          <a href="/contactMe">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-return (
-<div className="row">
-    <h4>About Me</h4>
-    <h4>Education</h4>
-    <h4>Experience</h4>
-    <h4>Contact</h4>
-</div>
-)
-
-
+}
 export default Navbar;
 
-/*import { useNavigate } from 'react';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -29,3 +41,4 @@ const Navbar = () => {
     </div>
   );
 };*/
+
