@@ -1,74 +1,31 @@
 //have sections for about me, experience, education, contact me that jump to the section when clicked, have it designed so that 
 //more sections can be added in easily if updating information. 
-import Scroll from 'react-scroll';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
-const NavLink =Scroll.NavLink
-
-const Navbar = () =>{
-
+function Navbar() {
+  return (
+    <nav className="row">
+      <a href="/" className="site-title">Home</a>
+      <ul>
+        <li>
+          <a href="/aboutMe">About Me</a>
+        </li>
+        <li>
+          <a href="/education">Education</a>
+        </li>
+        <li>
+          <a href="/experience">Experience</a>
+        </li>
+        <li>
+          <a href="/contactMe">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-return (
-<div className="row">
-    <h4>About Me</h4>
-    <h4>Education</h4>
-    <h4>Experience</h4>
-    <h4>Contact</h4>
-</div>
-)
-
 
 export default Navbar;
 
-/*import { useNavigate } from 'react';
 
-const Navbar = () => {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1 className="font-weight-light display-1 text-center" onClick={() => navigate('/')}>
-        The X app
-      </h1>
-    </div>
-  );
-};*/
 
-{/*<nav>
-  <ul>
-    <li>
-      <Link
-        activeClass="active"
-        to="section1"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Section 1
-      </Link>
-    </li>
-    <li>
-      <Link
-        activeClass="active"
-        to="section2"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Section 2
-      </Link>
-    </li>
-    <li>
-      <Link
-        activeClass="active"
-        to="section3"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Section 3
-      </Link>
-    </li>
-  </ul>
-</nav>*/}
