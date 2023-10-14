@@ -35,3 +35,8 @@ Contact Me <form>
 
 # Add ideas issues here 
 Kara is working on routing for individual pages, will need to make visually appealing home page and individual pages 
+Kara will work on Education 
+Hope will work on About Me
+Manny if you could work on Experience section/share some of your projects that you have to use to share
+
+Group will work on Contact Me form
