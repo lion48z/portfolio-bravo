@@ -3,7 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  './styles.css';
 
-function Navbar() {
+const  Navbar = () => {
   return (
     <nav className="row">
       <a href="/" className="site-title">Home</a>
