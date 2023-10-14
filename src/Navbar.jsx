@@ -7,18 +7,18 @@ import  './styles.css';
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="/" className="site-title">Home</a>
+      <a href="/" className="site-title">Cody McCoding</a>
       <ul>
-        <li>
+        <li className="active">
           <a href="/aboutMe">About Me</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/education">Education</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/experience">Experience</a>
         </li>
-        <li>
+        <li className="active">
           <a href="/contactMe">Contact Me</a>
         </li>
       </ul>
