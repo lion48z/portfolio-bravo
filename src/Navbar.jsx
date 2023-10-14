@@ -7,7 +7,7 @@ import  './styles.css';
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="/" className="site-title">Cody McCoding</a>
+      <a href="/" className="site-title">McCoding Dev LLC</a>
       <ul>
         <li className="active">
           <a href="/aboutMe">About Me</a>
