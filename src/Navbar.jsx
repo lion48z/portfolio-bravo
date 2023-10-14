@@ -1,7 +1,7 @@
 //have sections for about me, experience, education, contact me that jump to the section when clicked, have it designed so that 
 //more sections can be added in easily if updating information. 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import  './styles.css';
 
 function Navbar() {
   return (
