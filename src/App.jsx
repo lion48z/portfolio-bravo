@@ -8,35 +8,22 @@ import Experience from "./pages/Experience";
 import ContactMe from "./pages/ContactMe";
 import NotFoundComponent from "./pages/NotFoundComponent";
 import Home from "./pages/Home";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  let Component;
-
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home; // Assuming you want the About component for the "/" path
-      break;
-    case "/aboutMe":
-      Component = About;
-      break;
-    case "/contactMe":
-      Component = ContactMe;
-      break;
-    case "/education":
-      Component = Education;
-      break;
-    case "/experience":
-      Component = Experience;
-      break;
-    default:
-      Component = NotFoundComponent;
-  }
-
+ 
   return (
     <>
       <Navbar />
       <div className="container">
-      <Component />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutMe" element={<About/>} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contactMe" element={<ContactMe />} />
+          <Route path="*" element={<NotFoundComponent />} />
+        </Routes>
       </div>
     </>
   );
