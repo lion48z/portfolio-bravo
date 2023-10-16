@@ -3,27 +3,30 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+
+const path = window.location.pathname
 function Navbar() {
   return (
     <nav className="nav">
       <a href="/" className="site-title">McCoding Dev LLC</a>
       <ul>
-        <li className="active">
-          <a href="/aboutMe">About Me</a>
-        </li>
-        <li className="active">
-          <a href="/education">Education</a>
-        </li>
-        <li className="active">
-          <a href="/experience">Experience</a>
-        </li>
-        <li className="active">
-          <a href="/contactMe">Contact Me</a>
-        </li>
+        <CustomLink href="/aboutMe">About Me</CustomLink>
+        <CustomLink href="/education">Education</CustomLink>
+        <CustomLink href="/experience">Experience</CustomLink>
+        <CustomLink href="/contactMe">Contact Me</CustomLink>
+        
       </ul>
     </nav>
   )
 }
+function CustomLink({ href, children, ...props }) {
+  return (
+  <li className={path === href ? "active" : ""}>
+  <a href={href} {...props} >{children}</a>
+  </li>
+  )
+}
+
 
 export default Navbar;
 
