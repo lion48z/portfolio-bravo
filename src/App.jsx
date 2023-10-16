@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import React from 'react';
 import Navbar from './Navbar';
 import About from "./pages/About";
 import Education from "./pages/Education";
