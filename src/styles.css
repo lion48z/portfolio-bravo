@@ -61,4 +61,22 @@
     background-size: auto;
    
   }
+  .row {
+    display: flex;
+    flex-flow: row-wrap;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid blue;
+
+
+  }
+  .column {
+    display: flex;
+    flex-flow: row-wrap;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid blue;
+  }
 
