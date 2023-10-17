@@ -1,6 +1,18 @@
 * {
     box-sizing: border-box;
   }
+  .container {
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+    background-color: blue;
+    color:bisque;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+      
+  }
   
   body {
     margin: 0;
@@ -11,7 +23,7 @@
     
   }
   .nav {
-    background-color: #333;
+    background-color: #111;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
@@ -48,5 +60,23 @@
   img {
     background-size: auto;
    
+  }
+  .row {
+    display: flex;
+    flex-flow: row-wrap;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid rgb(230, 230, 243);
+
+
+  }
+  .column {
+    display: flex;
+    flex-flow: row-wrap;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid blue;
   }
 

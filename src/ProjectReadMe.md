@@ -40,3 +40,5 @@ Hope will work on About Me
 Manny if you could work on Experience section/share some of your projects that you have to use to share
 
 Group will work on Contact Me form
+
+added some color to the heading so that layout is more clear. this can be removed once we get final styles-- K
