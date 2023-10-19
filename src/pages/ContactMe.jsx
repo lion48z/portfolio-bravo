@@ -1,5 +1,10 @@
 import React from 'react';
+import { useState }from 'react;'
 function ContactMe() {
+    const ContactForm= () => {
+        const [submitted, setSubmitted] =useState(false);
+        const handleSubmit = (e) => e.preventDefault();
+    }
     return (
     <>
     <h1>Contact Me</h1>
