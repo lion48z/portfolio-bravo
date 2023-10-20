@@ -8,27 +8,32 @@ function ContactMe() {
     <form>
         <div className="row">
             <div className="column"> 
-            <h5>Name</h5> 
+            <label>Name
             <input></input>
+            </label> 
+           
             
             </div>
       
     
             <div className="column">
-            <h5>Phone</h5> 
+            <label>Phone
             <input></input>
+            </label> 
         
             </div>
 
             <div className="column">
-            <h5>Email</h5> 
+            <label>Email
             <input></input>
+            </label> 
    
             </div>
     
             <div className="column">
-            <h5>Comments</h5> 
+            <label>Comments
             <input></input>
+            </label> 
             </div>
         </div>
     <button className="submit">submit</button>
