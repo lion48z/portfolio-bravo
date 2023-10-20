@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactForm= () => {
     const [submitted, setSubmitted] =useState(false);
