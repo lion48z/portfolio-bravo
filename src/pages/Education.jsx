@@ -5,7 +5,7 @@ function Education() {
         <>
         <h1>Education</h1>
         <div className="row">
-            <div className="column">
+           
              <h2>Bachelors of Business Adminstration</h2>
                  <p> -Weber State 2006</p>
                 <h2>Eagle Corps Full Stack Boot Camp 2023</h2>
@@ -16,7 +16,7 @@ function Education() {
 
                  </p>
                 </div>
-        </div>
+    
         <br></br>
         <div className="row">
             <div className="column">
