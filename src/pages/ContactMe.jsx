@@ -32,12 +32,17 @@ function ContactMe() {
     
             <div className="column">
             <label>Comments
-            <textarea></textarea>
-            </label> 
+            <textarea name="message" rows="4"></textarea>
+            </label>
+            
             </div>
+            <div className="column" >
+            <button className="submit">Send</button>  
+            </div>
+            
         </div>
-    <button className="submit">submit</button>
-        
+    
+       
     </form>
     </>)
 }
