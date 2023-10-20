@@ -32,7 +32,7 @@ function ContactMe() {
     
             <div className="column">
             <label>Comments
-            <input></input>
+            <textarea></textarea>
             </label> 
             </div>
         </div>
