@@ -6,7 +6,7 @@ function Home() {
     <div className="background" 
     style={{ backgroundImage: `url('https://img.freepik.com/free-vector/circuits-blue-red-gradient-digital-background_23-2148821701.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=ais')`,
     color:"white",
-    height: "6rem",
+    height:"800rem",
     width: "100%",
     margin: 0,
     padding: 0,
