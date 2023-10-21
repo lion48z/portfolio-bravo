@@ -15,8 +15,12 @@ const ContactForm= () => {
         .then(function(response){
             console.log('Success!', response.status, response.text);
             setSubmitted(true);
-            e.target.reset();
-        }, function(error) {
+            setName('');
+            setPhone('');
+            setEmail('');
+            setComment('');
+        })
+        .catch(function(error) {
             console.log('Failed...', error);
         });
        
