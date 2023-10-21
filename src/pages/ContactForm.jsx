@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
+import React from 'react';
 
 const ContactForm= () => {
     const [name, setName] = useState('');
@@ -14,13 +15,14 @@ const ContactForm= () => {
         .then(function(response){
             console.log('Success!', response.status, response.text);
             setSubmitted(true);
+            e.target.reset();
         }, function(error) {
             console.log('Failed...', error);
-        })
-        e.target.reset();
+        });
+       
     }
     return (
-        <form className="row" style={{ margin: " 25px 85px 75px 100px"}}>
+        <form className="row" style={{ margin: " 25px 85px 75px 100px"}} onSubmit={sendEmail}>
         
             <label>Name
             <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="form-control"></input>
@@ -43,7 +45,7 @@ const ContactForm= () => {
                         
             <input 
             type="submit"
-            value={sendEmail}
+            value="Send"
             className="form-control btn btn-primary"/> 
 
         {submitted && <p>Thank you, your information has been sent!</p>} 
