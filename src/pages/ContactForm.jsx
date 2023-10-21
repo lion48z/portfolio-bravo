@@ -13,6 +13,7 @@ const ContactForm= () => {
         emailjs.sendForm('service_joyi3ga','template_1oaa4ij',e.target,'DR7tNYPj44gvKtW2z')
         .then(function(response){
             console.log('Success!', response.status, response.text);
+            setSubmitted(true);
         }, function(error) {
             console.log('Failed...', error);
         })
@@ -42,7 +43,7 @@ const ContactForm= () => {
                         
             <input 
             type="submit"
-            value="Send"
+            value={sendEmail}
             className="form-control btn btn-primary"/> 
 
         {submitted && <p>Thank you, your information has been sent!</p>} 
