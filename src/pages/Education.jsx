@@ -33,7 +33,7 @@ function Education() {
                 marginTop: "10px",
                 minHeight: "50vh",
                 backgroundColor: "rgba(0, 0, 0, 0)",
-                border: "solid white 1px"
+                
             }}>
                 <h2>Eagle Corps Full Stack Boot Camp 2023</h2>
                     <p>"The first coding program designed by veterans so veterans can successfully transition into a civilian career. Together, we lead the way."
@@ -47,7 +47,7 @@ function Education() {
                 marginTop: "10px",
                 minHeight: "50vh",
                 backgroundColor: "rgba(0, 0, 0, 0)",
-                border: "solid white 1px" 
+               
             }}>
                 <h2>Free Code Camp Certificate Python 2022</h2>  
                  <p>
