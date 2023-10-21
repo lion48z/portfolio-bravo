@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import emailjs from '@emailjs/browser';
 
 const ContactForm= () => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
-    const [comment, setComment] = useState('';)
+    const [comment, setComment] = useState('');
     const [submitted, setSubmitted] = useState(false);
-    const handleSubmit = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
+        emailjs.sendForm('service_joyi3ga','template_1oaa4ij',e.target,'DR7tNYPj44gvKtW2z')
+        .then(function(response){
+            console.log('Success!', response.status, response.text);
+        }, function(error) {
+            console.log('Failed...', error);
+        })
+        e.target.reset();
     }
     return (
         <form className="row" style={{ margin: " 25px 85px 75px 100px"}}>
