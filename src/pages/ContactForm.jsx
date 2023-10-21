@@ -45,11 +45,13 @@ const ContactForm= () => {
             value="Send"
             className="form-control btn btn-primary"/> 
 
-        {submitted && <p>Thank you, your information has been sent!</p>} //
+        {submitted && <p>Thank you, your information has been sent!</p>} 
             
     </form>
     );
 }
+
+export default ContactForm;
 /*will need a name, setName useState for the name
 phone, setPhone 
 email, setEmail

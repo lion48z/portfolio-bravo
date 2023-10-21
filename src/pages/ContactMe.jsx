@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import ContactForm from './ContactForm';
 function ContactMe() {
     
     return (
@@ -13,34 +13,7 @@ function ContactMe() {
         backgroundSize: "cover",
     }}>
     <h1>Contact Me</h1>
-    <form className="row" style={{ margin: " 25px 85px 75px 100px"}}>
-        
-            <label>Name
-            <input type="text" name="name" className="form-control"></input>
-            </label> 
-                               
-          
-            <label>Phone
-            <input type="text" name="phone" className="form-control"></input>
-            </label> 
-                 
-          
-            <label>Email
-            <input type="email" name="user_email" className="form-control"></input>
-            </label> 
-               
-   
-            <label>Comments
-            <textarea name="message" rows="4" className="form-control"></textarea>
-            </label>
-                        
-            <input 
-            type="submit"
-            value="Send"
-            className="form-control btn btn-primary"/> 
-                       
-            
-    </form>
+    <ContactForm /> 
     </div>)
 }
 
