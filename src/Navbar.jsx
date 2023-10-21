@@ -2,33 +2,39 @@
 //more sections can be added in easily if updating information. 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const path = window.location.pathname
-function Navbar() {
+function Navigation() {
+  
+
   return (
-    <nav className="nav">
-      <a href="/" className="site-title">McCoding Dev LLC</a>
-      <ul>
-        <CustomLink href="/aboutMe">About Me</CustomLink>
-        <CustomLink href="/education">Education</CustomLink>
-        <CustomLink href="/experience">Experience</CustomLink>
-        <CustomLink href="/contactMe">Contact Me</CustomLink>
-        
-      </ul>
-    </nav>
-  )
-}
-function CustomLink({ href, children, ...props }) {
-  return (
-  <li className={path === href ? "active" : ""}>
-  <a href={href} {...props} >{children}</a>
-  </li>
-  )
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">McCoding Dev LLC</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <CustomLink href="/aboutMe">About Me</CustomLink>
+            <CustomLink href="/education">Education</CustomLink>
+            <CustomLink href="/experience">Experience</CustomLink>
+            <CustomLink href="/contactMe">Contact Me</CustomLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
+function CustomLink({ href, children }) {
+  return (
+    <Nav.Link href={href} className={window.location.pathname === href ? "active" : ""}>
+      {children}
+    </Nav.Link>
+  );
+}
 
-export default Navbar;
+export default Navigation;
+
 
 
 

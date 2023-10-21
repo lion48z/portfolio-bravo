@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import './styles.css';
 import React from 'react';
-import Navbar from './Navbar';
+import Navigation from './Navbar';
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
@@ -14,7 +14,7 @@ function App() {
  
   return (
     <>
-      <Navbar />
+      <Navigation />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
