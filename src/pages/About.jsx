@@ -6,7 +6,7 @@ function About()  {
     return (
         <>
          <div className="background" 
-            style={{ backgroundImage: `url('https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150063081.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=sph')`,
+            style={{ backgroundImage: `url('https://img.freepik.com/free-photo/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=sph')`,
             backgroundSize: "100%",
             color:"white",
             minHeight: "100vh",
