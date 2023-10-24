@@ -1,30 +1,61 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Experience() {
+    const projects = [
+        {
+            title:"Nature Page",
+            description: "Design & Development",
+            imgUrl: "https://img.freepik.com/free-vector/business-landing-page-template-with-photo_52683-19466.jpg?w=740&t=st=1698165752~exp=1698166352~hmac=9a116b8d0b53f9ce82c000c2c0fb39ef5bdc9dead0e85ced1dfe0bb488ab4e70"
+    
+        },
+        {
+            title: "Business Page",
+            description: "Design & Development",
+            imgUrl: "https://img.freepik.com/free-vector/landing-page-business-with-photo_23-2148237399.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=ais"
+        },
+        {
+            title: "Travel",
+            descripton: "Design & Development",
+            imgUrl: "https://img.freepik.com/free-vector/template-explore-world-landing-page_23-2148300727.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=ais"
+        
+        }
+    ]
     return (
-        <>
-        <h1>Experience</h1>
-        <div className="row">
-            <div className="column">
-             <h2>Wordle</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-        </div>
-        <br></br>
-        <div className="row">
-            <div className="column">
-            <h2>Tic Tac Toe</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-        </>)
+        <section className="project" id="project"
+        style={{
+            backgroundImage: `url("https://img.freepik.com/free-vector/vibrant-halftone-black-background-vector_53876-67522.jpg?size=626&ext=jpg&ga=GA1.1.1274431862.1697766654&semt=sph")`,
+            backgroundSize: "100%",
+            color:"white",
+            minHeight: "100vh",
+        }}
+        >
+            <Container>
+                <Row>
+                    <Col>
+                        <h2>Projects</h2>
+                        <p></p>
+                    </Col>
+                </Row>
+                <Row>
+                {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                </Row>
+            </Container>
+           
+        </section>
+        
+        )
 }
 
 export default Experience;
