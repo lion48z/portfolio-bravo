@@ -1,5 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+import jsicon from '../images/jsicon.jpg';
+import html from '../images/html.jpg';
+import react from '../images/react.jpg';
+import python from '../images/python.jpg';
+
 
 function Home() {
   return (
@@ -16,8 +22,35 @@ function Home() {
        marginTop: "10px",
         minHeight: "50vh",
         backgroundColor: "rgba(0, 0, 0, 0)",
-        border: "solid white 1px" // will remove this once i get scrolling pictures/text in
+        
       }}>
+        <Carousel interval={2000} prevIcon={<span>&lsaquo;</span>} nextIcon={<span>&rsaquo;</span>}>
+          <Carousel.Item>
+            <img
+              className="d-block w-25"
+              src={jsicon}
+              alt="JavaScript"/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-25"
+              src={html}
+              alt="html"
+              />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-25"
+              src={python}
+              alt="Python 3"/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-25"
+              src={react}
+              alt="React"/>
+          </Carousel.Item>
+        </Carousel>
         
       </section>
     </div>
