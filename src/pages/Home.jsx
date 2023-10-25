@@ -24,7 +24,7 @@ function Home() {
         backgroundColor: "rgba(0, 0, 0, 0)",
         
       }}>
-        <Carousel interval={2000} prevIcon={<span>&lsaquo;</span>} nextIcon={<span>&rsaquo;</span>}>
+        <Carousel interval={2000} prevIcon={<span>&lsaquo;</span>} nextIcon={<span>&rsaquo;</span>}> 
           <Carousel.Item>
             <img
               className="d-block w-25"
