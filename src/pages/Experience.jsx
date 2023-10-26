@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 
 function Experience() {
     const projects = [
@@ -40,16 +40,13 @@ function Experience() {
                     </Col>
                 </Row>
                 <Row>
-                {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                <Carousel>
+                        {projects.map((project, index) => (
+                            <Carousel.Item key={index}>
+                                <ProjectCard {...project} />
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </Row>
             </Container>
            
