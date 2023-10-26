@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
-  const [typedText, setTypedText] = useState(''); // Initialize the state for typed text
+  const [typedText, setTypedText] = useState(''); 
   const fullText =
     "I'm Cody, a passionate junior web developer eager on contributing to the digital age. Currently, I have 3 years of experience working with a small company, completing front and back-end development. I gained knowledge and experience through the Eagle Corps Full-Stack Bootcamp. Such as learning the ways of: JavaScript, HTML, CSS, React, Python, and C++. My goal is to continue learning and growing as a developer, taking on new challenges, and collaborating with others to create meaningful and impactful web applications.";
 
