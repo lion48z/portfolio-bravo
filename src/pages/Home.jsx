@@ -17,7 +17,7 @@ function Home() {
    
 
      }}>
-      <h1>Home</h1>
+      <h1>Welcome to My Developer Page!</h1>
       <section className="banner" style={{
        marginTop: "10px",
         minHeight: "50vh",
@@ -25,28 +25,30 @@ function Home() {
         
       }}>
         <Carousel interval={3000} > 
-          <Carousel.Item >
+          <Carousel.Item style={{
+           
+          }}>
             <img
-              className="d-block w-25"
+              className="d-block w-50"
               src={jsicon}
               alt="JavaScript"/>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-25"
+              className="d-block w-50"
               src={html}
               alt="html"
               />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-25"
+              className="d-block w-50"
               src={python}
               alt="Python 3"/>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-25"
+              className="d-block w-50"
               src={react}
               alt="React"/>
           </Carousel.Item>
