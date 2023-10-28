@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import './styles.css';
+import './styles.css';
 import React from 'react';
 import Navigation from './Navbar';
 import About from "./pages/About";
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <div className="container">
+      <div className="my-component">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutMe" element={<About/>} />
