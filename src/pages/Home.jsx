@@ -24,7 +24,7 @@ function Home() {
         backgroundColor: "rgba(0, 0, 0, 0)",
         
       }}>
-        <Carousel interval={3000} > 
+        <Carousel interval={1000} > 
           <Carousel.Item style={{
            
           }}>

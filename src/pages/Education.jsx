@@ -12,6 +12,7 @@ function Education() {
     fontWeight: 'bold', // Make the text bold
     fontSize: '16px', // Set the font size
   };
+  const rickRollLink = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
 
   return (
     <Container fluid>
@@ -53,6 +54,7 @@ function Education() {
                 <h2>Eagle Corps Full Stack Boot Camp 2023</h2>
                 <p style={paragraphStyle}>
                   "The first coding program designed by veterans so veterans can successfully transition into a civilian career. Together, we lead the way." Gained knowledge from the Boot camp utilizing and running software such as: JavaScript, HTML, CSS, and React to create meaningful projects.
+                  {' '}<a href={rickRollLink} target="_blank" rel="noopener noreferrer">Learn more</a>
                 </p>
                 <img
                   src="https://lh3.googleusercontent.com/ANBcbCyPfRh1hJ7fe8RoYDs1gfyuLWBJZ1uc_3CN-0eKx8VLKftlRDa-gQRTReFba63ZfFFS19OvvrfOH1gnEi8ukgwxjvgkjLdn=s0"
